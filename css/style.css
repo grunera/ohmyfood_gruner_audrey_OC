@@ -1,0 +1,484 @@
+/* POLICES*/
+
+@font-face {
+    font-family: 'montserratextrabold';
+    src: url('./fonts/montserrat-extrabold-webfont.woff2') format('woff2'),
+         url('./fonts/montserrat-extrabold-webfont.woff') format('woff'),
+         url('./fonts/Montserrat-ExtraBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+font-family: 'Montserrat', sans-serif;
+
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('./fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('./fonts/montserrat-regular-webfont.woff') format('woff'),
+         url('./fonts/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+font-family: 'Montserrat', sans-serif
+
+
+@font-face {
+    font-family: 'courgetteregular';
+    src: url('./fonts/courgette-regular-webfont.woff2') format('woff2'),
+         url('./fonts/courgette-regular-webfont.woff') format('woff'),
+         url('./fonts/Courgette-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+font-family: 'Courgette', cursive;
+
+
+@font-face {
+    font-family: 'kalamregular';
+    src: url('./fonts/kalam-regular-webfont.woff2') format('woff2'),
+         url('./fonts/kalam-regular-webfont.woff') format('woff'),
+         url('./fonts/Kalam-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+font-family: 'Kalam', cursive;
+
+@font-face {
+    font-family: 'kalambold';
+    src: url('./fonts/kalam-bold-webfont.woff2') format('woff2'),
+         url('./fonts/kalam-bold-webfont.woff') format('woff'),
+         url('./fonts/Kalam-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+font-family: 'Kalam', cursive;
+
+@font-face {
+    font-family: 'yeseva_oneregular';
+    src: url('./fonts/yesevaone-regular-webfont.woff2') format('woff2'),
+         url('./fonts/yesevaone-regular-webfont.woff') format('woff'),
+          url('./fonts/YesevaOne-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+font-family: 'Yeseva One', cursive;
+
+@font-face {
+    font-family: 'dancing_scriptregular';
+    src: url('./fonts/dancingscript-variablefont_wght-webfont.woff2') format('woff2'),
+         url('./fonts/dancingscript-variablefont_wght-webfont.woff') format('woff'),
+          url('./fonts/DancingScript-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+font-family: 'Dancing Script', cursive;
+
+@font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url('./fonts/kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('./fonts/kaushanscript-regular-webfont.woff') format('woff'),
+         url('./fonts/KaushanScript-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+font-family: 'Kaushan Script', cursive;
+
+/* Eléments généraux commun Desktop max-width 1230 px / responsive pour max-width 480px et pour min width 481 px to max-width*/
+
+* {
+ margin:0;
+ padding:0;
+ }
+
+body {
+  margin:auto;
+}
+
+main {
+  margin:auto;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 89px;
+  background-color: #579c87;
+  margin:auto;
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  font-family:  'Montserrat', sans-serif;
+  font-weight:bold;
+  font-size: 2.8em;
+  color:#fcca46;
+}
+
+/* FOOTER*/
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 58px;
+  margin: auto;
+  position: sticky;
+  bottom:0px;
+  background-color: #579c87;
+}
+
+footer #contact {
+  padding: 0px 35px 0px 35px;
+}
+
+footer #mentionsleg {
+  padding: 0px 35px 0px 35px;
+}
+
+footer h2 {
+  font-family:  'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 1.2em;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: #fcca46;
+  text-decoration: none;
+}
+
+/* FOOTER ANIMATION */
+
+@keyframes headshake {
+  25% {
+    transform: translateX(5%);
+  }
+  75% {
+    transform: translateX(-5%);
+  }
+}
+
+.headshakeanim:hover {
+  animation: headshake 150ms infinite ease-in-out;
+}
+
+
+/* MAIN */
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  padding-bottom: 20px;
+  background-color: white;
+}
+
+#menu1and2, #menu3and4 {
+  display: flex;
+  justify-content: center;
+  margin:0px; /*pas utile*/
+}
+
+/* ANIMATIONS ZOOM MENUS PAGE D ACCUEIL */
+
+.effetzoom {
+  transform: scale(0.75);
+  opacity: 1;
+  transition: transform 250ms ease-in-out;
+  overflow:hidden;
+}
+
+.effetzoom:hover {
+  transform: scale(1);
+  opacity: 0.3;
+}
+
+/* SECTIONS */
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 310px; 
+  height:390px;
+  margin:50px;
+  box-shadow: 0 0 30px #d8ddd6;
+}
+
+
+/* MENU 1 LA NOTE ENCHANTEE */
+
+
+/* Menu 1-  îcone note de musique */
+
+.icon_note i {
+  display: inline-block;
+  background-clip: initial;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, #f16062, #f37a6e, #f7a589);
+  font-size: 2.5em;
+  padding: 25px;
+}
+
+/* Menu 1-  éléments page de couv */
+
+.menu1 {
+  background-color: #fcdfdb;
+  color: #2f0000;
+  font-family: 'Kalam', cursive;  /*pas utile*/
+  font-weight: normal;
+}
+
+.menu1 .titlemenufont1 {
+  font-family: 'Courgette', cursive;
+  font-size: 2em;
+}
+
+.menu1 a {
+  background-color: #fcdfdb;
+  color: #2f0000;
+  font-family: 'Kalam', cursive;
+  font-weight: normal;
+}
+
+.menu1 .bigmenu1font {
+  font-family: 'Kalam', cursive;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding:0px;
+}
+
+/* MENU 2 LE CHIC A LA FRANCAISE */
+/* Menu 2-  éléments page de couv */
+
+.menu2 {
+  background-color: #fff5fe;
+  color: #c67412;
+  font-family: 'Yeseva One', cursive;  /*pas utile*/
+  font-weight: normal;
+}
+
+.menu2 .degrademenu2 {
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, #c67412, #a56799, #6e4ccc);
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.7em;
+  padding-top:100px;
+  padding-bottom:10px;
+}
+
+.menu2 a {
+  background-color: #fff5fe;
+  color: #c67412;
+  font-family: 'Yeseva One', cursive;  
+  font-weight: normal;
+}
+
+.menu2 .bigmenu2font {
+  font-family: 'Yeseva One', cursive;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+/* MENU 3 LLE DELICE DES PAPILLES */
+/* Menu 3-  éléments page de couv */
+
+.menu3 {
+  background-color: #efefef;
+  color: #303131;
+}
+
+.menu3 .degrademenu3 {
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, #0228dd, #0670f3, #229df9);
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+}
+
+.menu3 a {
+  background-color: #efefef;
+  color: #0887fb;
+  font-family: 'Kalam', cursive;  /*pas utile*/
+  font-weight: normal;
+}
+
+.menu3 .bigmenu3font {
+  font-family: 'Kalam',  cursive;
+  color:#0887fb;
+  font-size: 3em;
+  font-weight: normal;
+}
+
+/* MENU 4 LA PALETTE DU GOÛT */
+/* Menu 4-  éléments page de couv */
+
+.menu4 {
+  background-color: white;
+  color: #91ff66;
+  font-family: 'Kalam',  cursive;  /*pas utile*/
+  font-weight: normal;
+}
+
+.menu4 .degrademenu4 {
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, #41963c, #91ff66, #bfff7e);
+  font-family: 'Kaushan Script', cursive;
+  font-size: 2.25em;
+  padding-top:0px;
+  padding-bottom:0px;
+}
+
+.menu4 a {
+  background-color: white;
+  color: #41963c;
+  font-family: 'Kalam',  cursive;
+  font-weight: normal;
+}
+
+.menu4 .bigmenu4font {
+  font-family: 'Kalam',  cursive;
+  font-size: 2.8em;
+  font-weight: normal;
+}
+
+/*ASIDE --BOUTON PROCHAINEMENT */
+
+aside {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #579c87;
+  color: #fcca46;
+  width: 280px;
+  height: 55px;
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+aside .effetannonce {
+
+  font-family:  'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  padding-bottom: 20px
+}
+
+/*ASIDE --Animation des 3 points */
+
+@keyframes dots {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.effetannonce span {
+  display: inline-block;
+  animation: dots 3s infinite ease-in-out;
+  font-size: 2em;
+  transition-delay: ;
+}
+
+.effetannonce .point2 {
+  animation-delay: 0.5s;
+}
+
+.effetannonce .point3 {
+  animation-delay: 0.9s;
+}
+
+/* FORMATS RESPONSIVE -- */
+
+
+/* REGLES FORMAT RESPONSIVE SMARTPHONES --I PAD ET TABLETTES NON INCLUS (REGLES CSS DESKTOP)*/
+
+
+@media only screen and (max-width: 730px)
+ {
+
+  
+  section 
+  {
+    width: 255px;
+    height: 330px;
+    margin:auto;
+    margin-top: 40px;
+  }
+  
+  #menu1and2, #menu3and4 
+  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  aside {
+    margin-top: 30px;
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    bottom: 0;
+    margin: 0px;
+    font-size: 0.9em;
+    padding-bottom: 12px;
+  }
+}
+
+/* REGLES RESPONSIVE ECRANS DE PLUS DE 730 px et moins de 1023px (I PAD PRO non inclus) */
+
+
+@media only screen and (max-width: 1023px) and (min-width: 731px) {
+  
+  
+  #menu1and2, #menu3and4 
+  {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+    width: 768px;
+  }
+ 
+}
