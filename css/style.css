@@ -9,9 +9,6 @@
     font-style: normal;
 }
 
-font-family: 'Montserrat', sans-serif;
-
-
 @font-face {
     font-family: 'montserratregular';
     src: url('./fonts/montserrat-regular-webfont.woff2') format('woff2'),
@@ -20,9 +17,6 @@ font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-style: normal;
 }
-
-font-family: 'Montserrat', sans-serif
-
 
 @font-face {
     font-family: 'courgetteregular';
@@ -33,9 +27,6 @@ font-family: 'Montserrat', sans-serif
     font-style: normal;
   }
 
-font-family: 'Courgette', cursive;
-
-
 @font-face {
     font-family: 'kalamregular';
     src: url('./fonts/kalam-regular-webfont.woff2') format('woff2'),
@@ -44,8 +35,6 @@ font-family: 'Courgette', cursive;
     font-weight: normal;
     font-style: normal;
 }
-
-font-family: 'Kalam', cursive;
 
 @font-face {
     font-family: 'kalambold';
@@ -56,8 +45,6 @@ font-family: 'Kalam', cursive;
     font-style: normal;
 }
 
-font-family: 'Kalam', cursive;
-
 @font-face {
     font-family: 'yeseva_oneregular';
     src: url('./fonts/yesevaone-regular-webfont.woff2') format('woff2'),
@@ -66,8 +53,6 @@ font-family: 'Kalam', cursive;
     font-weight: normal;
     font-style: normal;
 }
-
-font-family: 'Yeseva One', cursive;
 
 @font-face {
     font-family: 'dancing_scriptregular';
@@ -78,8 +63,6 @@ font-family: 'Yeseva One', cursive;
     font-style: normal;
 }
 
-font-family: 'Dancing Script', cursive;
-
 @font-face {
     font-family: 'kaushan_scriptregular';
     src: url('./fonts/kaushanscript-regular-webfont.woff2') format('woff2'),
@@ -88,8 +71,6 @@ font-family: 'Dancing Script', cursive;
     font-weight: normal;
     font-style: normal;
 }
-
-font-family: 'Kaushan Script', cursive;
 
 /* Eléments généraux commun Desktop max-width 1230 px / responsive pour max-width 480px et pour min width 481 px to max-width*/
 
@@ -427,15 +408,12 @@ aside .effetannonce {
 }
 
 /* FORMATS RESPONSIVE -- */
-
-
 /* REGLES FORMAT RESPONSIVE SMARTPHONES --I PAD ET TABLETTES NON INCLUS (REGLES CSS DESKTOP)*/
 
 
 @media only screen and (max-width: 730px)
  {
 
-  
   section 
   {
     width: 255px;
@@ -467,7 +445,6 @@ aside .effetannonce {
 }
 
 /* REGLES RESPONSIVE ECRANS DE PLUS DE 730 px et moins de 1023px (I PAD PRO non inclus) */
-
 
 @media only screen and (max-width: 1023px) and (min-width: 731px) {
   

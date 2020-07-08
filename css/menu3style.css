@@ -177,44 +177,46 @@ main {
   background-color: white;
 }
 
-/*ELEMENTS SPECIFIQUES MENU 2 */
+/*ELEMENTS SPECIFIQUES MENU 3 */
 
 .carte_outtitle h2 {
   font-family: Times New Roman, sans-serif;
-  font-size: 2.4em;
+  font-size: 2.2em;
   text-align:center;
   padding-bottom:50px;
   padding-top:50px;
 }
 
-.page_carte2 .degrademenu2 {
-  display: inline-block;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(90deg, #c67412, #a56799, #6e4ccc);
-  font-family: 'Yeseva One', cursive;
-  font-size: 2.3em;
-  padding-top:70px;
-  padding-bottom:60px;
-}
-
 .carte {
-  background-color: #fff5fe;
-  color: #c67412;
-  font-family: 'Yeseva One', cursive;
+  background-color: #f9f9f9;
+  color: #303131;
+  font-family: 'Kalam',  cursive; 
   font-weight: normal;
   text-align:center;
-  font-size:1.0em;
+  font-size:1.1em;
   padding-top:10px;
   width:90%;
   margin: auto auto 25px auto;
   height: auto;
   overflow:hidden;
-  box-shadow: 0 0 30px #d8ddd6;
+  box-shadow: 0 0 6px #d8ddd6 ;
 }
 
-.sousmenu2_title {
+.page_carte3 .degrademenu3 {
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, #0228dd, #0670f3, #229df9);
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.0em;
+  padding-top:70px;
+  padding-bottom:60px;
+  width:100%;
+}
+
+
+.sousmenu3_title {
   display: flex;
   justify-content: center;
   width: 76%;
@@ -222,258 +224,179 @@ main {
   padding-bottom:50px;
 }
 
-#sousmenu2color1 .sousmenu2_title h2{
-  font-family:'Yeseva One', cursive;
+.sousmenu3_title h2{
+  font-family:'Kalam',  cursive; 
   font-weight: normal;
-  font-size:1.6em;
+  font-size:1.2em;
 }
 
-#sousmenu2color2 .sousmenu2_title h2{
-  color:#a56799;
-  font-weight: normal;
-  font-size:1.6em;
-}
-
-#sousmenu2color2 .plat{
-  color:#a56799;
-}
-
-#sousmenu2color3 .sousmenu2_title h2{
-  color:#6e4ccc;
-  font-weight: normal;
-  font-size:1.6em;
-}
-
-#sousmenu2color3 .plat{
-  color:#6e4ccc;
-}
-
-#sousmenu2color1, #sousmenu2color2, #sousmenu2color3{
-  padding-bottom:40px;
-}
-
-.menu2_barredeco_left {
+.menu3_barredeco_left {
   display: inline-block;
-  height: 12px;
-  width: 250px;
+  height: 18px;
+  width: 340px;
   margin:auto auto auto 0px;
  }
 
-.menu2_barredeco_right {
+.menu3_barredeco_right {
   display: inline-block;
-  height: 12px;
-  width: 250px;
+  height: 18px;
+  width: 340px;
   margin: auto 0px auto auto;
 }
-
-.menu2_barredecorose_left {
-  display: inline-block;
-  height: 12px;
-  width: 250px;
-  margin:auto auto auto 0px;
- }
-
-.menu2_barredecorose_right {
-  display: inline-block;
-  height: 12px;
-  width: 250px;
-  margin: auto 0px auto auto;
-}
-
-/*ANIMATION SOUSMENU2_TITLE*/
-
-.menu2_underlineborder1_anim:hover {
-  background-size: 100% 100%;
-}
-
-.menu2_underlineborder1_anim {
-  display: inline;
-  text-decoration: none;
-  background:linear-gradient(to top, #c67412 1px, transparent 5px) no-repeat; 
-  background-size: 0 100%;
-  transition: background-size .3s;
-}
-
-.menu2_underlineborder2_anim:hover {
-  background-size: 100% 100%;
-}
-
-.menu2_underlineborder2_anim{
-  display: inline;
-  text-decoration: none;
-  background:linear-gradient(to top, #a56799 1px, transparent 5px) no-repeat; 
-  background-size: 0 100%;
-  transition: background-size .3s;
-}
-
-.menu2_underlineborder3_anim:hover {
-  background-size: 100% 100%;
-}
-
-.menu2_underlineborder3_anim {
-  display: inline;
-  text-decoration: none;
-  background:linear-gradient(to top, #6e4ccc 1px, transparent 5px) no-repeat; 
-  background-size: 0 100%;
-  transition: background-size .3s;
-}
-/*FIN ANIMATION*/
 
 .plat {
   display: flex;
   justify-content: space-between;
-  width: 76%;
+  width: 60%;
+  margin: auto;
+  padding-bottom:20px;
+
+}
+
+.page_carte3 .prix {
+  font-size:1.3em;
+  }
+
+/*ANIMATION SOUSMENU3_TITLE*/
+
+.menu3_underlineborder1_anim:hover {
+  background-size: 100% 100%;
+}
+
+.menu3_underlineborder1_anim {
+  display: inline;
+  text-decoration: none;
+  background:linear-gradient(to top,  #0228dd 1px, transparent 5px) no-repeat; 
+  background-size: 0 100%;
+  transition: background-size .2s;
+}
+
+.menu3_underlineborder2_anim:hover {
+  background-size: 100% 100%;
+}
+
+.menu3_underlineborder2_anim {
+  display: inline;
+  text-decoration: none;
+  background:linear-gradient(to top,  #0670f3 1px, transparent 5px) no-repeat; 
+  background-size: 0 100%;
+  transition: background-size .2s;
+}
+
+.menu3_underlineborder3_anim:hover {
+  background-size: 100% 100%;
+}
+
+.menu3_underlineborder3_anim {
+  display: inline;
+  text-decoration: none;
+  background:linear-gradient(to top,  #229df9 1px, transparent 5px) no-repeat; 
+  background-size: 0 100%;
+  transition: background-size .2s;
+}
+
+/* FORMATS RESPONSIVE -- */
+
+
+/* REGLES FORMAT RESPONSIVE SMARTPHONES --I PAD ET TABLETTES NON INCLUS (REGLES CSS DESKTOP)*/
+
+
+@media only screen and (max-width: 730px)
+ { 
+
+.carte_outtitle h2 {
+    font-size: 1.8em;
+  }
+
+
+.page_carte3 .degrademenu3  {
+  font-size: 1.6em;
+  padding-top:70px;
+  padding-bottom:60px;
+  width:100%;
+}
+
+.sousmenu3_title{
+  display: flex;
+  justify-content: center;
+  font-size:0.9em;
+  width: 89%;
   margin: auto;
   padding-bottom:50px;
 }
 
-.page_carte2 .prix {
-  font-size:1.0em;
-  font-weight: bold;
+.plat {
+  flex-direction:column;
+  font-size:0.85em;
 }
 
+.page_carte3 .prix{
+  padding-top:20px;
+}
 
-/* FORMATS RESPONSIVE -- */
+.menu3_barredeco_left {
+  height: 4px;
+  width:50px;
+  }
 
-/* REGLES FORMAT RESPONSIVE SMARTPHONES --I PAD ET TABLETTES NON INCLUS (REGLES CSS DESKTOP)*/
-
-@media only screen and (max-width: 730px)
- { 
+.menu3_barredeco_right {
+  height: 4px;
+  width: 50px;
   
-  .carte{
-  padding-bottom:30px;
-  width:85%;
-  }
- 
-  .carte_outtitle h2 {
-    font-size: 1.6em;
-   }
-
-  .page_carte2 .degrademenu2 {
-    font-size: 1.4em;
-   }
-
-  .sousmenu2_title{
-  width:98%;
-  padding-bottom:40px;
-  }
-
-  #sousmenu2color1,#sousmenu2color2,#sousmenu2color3{
-    padding-bottom:0px;
-  }
-
-  #sousmenu2color1 .sousmenu2_title h2 {
-    
-    font-size:1.15em;
-    margin-left: 10px;
-    margin-right:10px;
-    padding-bottom:0px;
-    padding-top:10px;
-  }
-
-  #sousmenu2color2 .sousmenu2_title h2 {
-    
-    font-size:1.15em;
-    margin-left: 0px;
-    margin-right:0px;
-    padding-bottom:30px;
-    padding-top:25px;
-  }
-
-  #sousmenu2color3 .sousmenu2_title h2 {
-    
-    font-size:1.15em;
-    margin:0px;
-    padding:0px;
-    padding-bottom:30px;
-    padding-top:25px;
-  }
-
-  .plat{
-    padding-bottom:0px;
-  }
-
-  .plat p {
-    font-size:0.9em;
-    padding-bottom:20px;
-  }
-
-  .plat .prix{
-    padding-bottom:20px;
-    padding-top:10px;
-  }
-
-  .menu2_barredeco_left {
-    
-    height: 2px;
-    width:50px;
-    }
-
-  .menu2_barredeco_right {
-    height: 2px;
-    width: 50px;
-  }
-
-  .plat {
-    flex-direction:column;
-    font-size:1.1em;
-  }
-
-  .basdepagecarte {
-    flex-direction:row;
-    height:150px;
-    width:100%;
-    margin-right:50px;
-  }
-
-  .basdepagecarte span {
-    margin: 0px;
-    font-size:0.9em;
-    padding: 0px;
-    margin-left:20px;
-  }
-
-  .basdepagecarte i{
-    padding:20px 0px 0px 10px;
-  }
-  .basdepagecarte h3 {
-    font-size: 1.5em;
-    width:400px;
-    text-align:left;
-    padding-left:20px;
-  }
+}
 
   footer {
     height: 80px;
     padding:0;
-    }
-
   }
+
+}
 
 
 /* REGLES RESPONSIVE ECRANS DE PLUS DE 730 px et moins de 1023px (I PAD PRO non inclus) */
 
 
 @media only screen and (max-width: 1023px) and (min-width: 731px) {
-  
-  .carte p{
-    font-size:0.88em;
+
+  .page_carte3{
+    height:820px;
   }
+
+.page_carte3 .degrademenu3  {
+   width:100%;
+}
+
+.menu3_barredeco_left {
   
-  .menu2_barredeco_left {
   height: 5px;
   width:120px;
   
  }
 
-.menu2_barredeco_right {
+.menu3_barredeco_right {
+  
   height: 5px;
   width: 120px;
- }
+  
+}
  
+ .sousmenu3_title{
+  padding-bottom:30px;
+ }
+
+.plat {
+  font-size:0.95em;
+  width: 80%;
+  text-align:left;
+  padding-bottom:12px;
+}
+
+
 .plat .prix {
   padding-left:40px;
-  font-size:1.0em;
+  font-size:1.1em;
+  
+  
 }
 
 

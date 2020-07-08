@@ -9,9 +9,6 @@
     font-style: normal;
 }
 
-font-family: 'Montserrat', sans-serif;
-
-
 @font-face {
     font-family: 'montserratregular';
     src: url('./fonts/montserrat-regular-webfont.woff2') format('woff2'),
@@ -20,9 +17,6 @@ font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-style: normal;
 }
-
-font-family: 'Montserrat', sans-serif
-
 
 @font-face {
     font-family: 'courgetteregular';
@@ -33,9 +27,6 @@ font-family: 'Montserrat', sans-serif
     font-style: normal;
   }
 
-font-family: 'Courgette', cursive;
-
-
 @font-face {
     font-family: 'kalamregular';
     src: url('./fonts/kalam-regular-webfont.woff2') format('woff2'),
@@ -44,8 +35,6 @@ font-family: 'Courgette', cursive;
     font-weight: normal;
     font-style: normal;
 }
-
-font-family: 'Kalam', cursive;
 
 @font-face {
     font-family: 'kalambold';
@@ -56,8 +45,6 @@ font-family: 'Kalam', cursive;
     font-style: normal;
 }
 
-font-family: 'Kalam', cursive;
-
 @font-face {
     font-family: 'yeseva_oneregular';
     src: url('./fonts/yesevaone-regular-webfont.woff2') format('woff2'),
@@ -66,8 +53,6 @@ font-family: 'Kalam', cursive;
     font-weight: normal;
     font-style: normal;
 }
-
-font-family: 'Yeseva One', cursive;
 
 @font-face {
     font-family: 'dancing_scriptregular';
@@ -78,8 +63,6 @@ font-family: 'Yeseva One', cursive;
     font-style: normal;
 }
 
-font-family: 'Dancing Script', cursive;
-
 @font-face {
     font-family: 'kaushan_scriptregular';
     src: url('./fonts/kaushanscript-regular-webfont.woff2') format('woff2'),
@@ -88,8 +71,6 @@ font-family: 'Dancing Script', cursive;
     font-weight: normal;
     font-style: normal;
 }
-
-font-family: 'Kaushan Script', cursive;
 
 /* Eléments généraux commun Desktop max-width 1230 px / responsive pour max-width 480px et pour min width 481 px to max-width*/
 
@@ -312,7 +293,6 @@ main {
 }
 
 
-
 /* FORMATS RESPONSIVE -- */
 
 
@@ -322,46 +302,36 @@ main {
 @media only screen and (max-width: 730px)
  {
 
+
   .carte_outtitle h2 {
-  
-  font-size: 1.8em;
-  
-}
+    font-size: 1.8em;
+  }
 
 
 .page_carte1 h2{
-  
-  font-size: 1.8em;
- 
-}
+    font-size: 1.8em;
+ }
 
   .sousmenu1_title h2{
-  
-  font-size:1.4em;
+    font-size:1.4em;
 }
 
 .menu1_barredeco_left {
-  
   height: 2px;
   width:40px;
-  
- }
+  }
 
 .menu1_barredeco_right {
-  
   height: 2px;
   width: 40px;
-  
-}
+ }
 
 .plat {
-  
   flex-direction:column;
   font-size:1.1em;
 }
 
 .basdepagecarte {
-  
   flex-direction:row;
   height:150px;
   width:100%;
@@ -378,8 +348,8 @@ main {
 .basdepagecarte i{
   padding:20px 0px 0px 10px;
 }
+
 .basdepagecarte h3 {
-  
   font-size: 1.5em;
   width:400px;
   text-align:left;
@@ -387,7 +357,7 @@ main {
 }
 
   footer {
-    height: 100px;
+    height: 80px;
     padding:0;
   }
 
@@ -400,22 +370,16 @@ main {
   
   
   .menu1_barredeco_left {
-  
   height: 5px;
   width:120px;
-  
- }
+  }
 
 .menu1_barredeco_right {
-  
   height: 5px;
   width: 120px;
-  
-}
+ }
  
 .plat {
-  
- 
   font-size:1.05em;
 }
 
