@@ -125,11 +125,11 @@ footer {
 }
 
 footer #contact {
-  padding: 0px 35px 0px 35px;
+  padding: 20px 35px 0px 35px;
 }
 
 footer #mentionsleg {
-  padding: 0px 35px 0px 35px;
+  padding: 20px 35px 0px 35px;
 }
 
 footer h2 {
@@ -217,12 +217,16 @@ main {
   padding: 25px;
 }
 
+.sousmenu1_title{
+  padding-top:40px;
+  padding-bottom:40px;
+}
 
 .sousmenu1_title h2{
   font-family:"Kalam", cursive;
   font-weight: normal;
   font-size:1.9em;
-}
+  }
 
 /*ANIMATION SOUSMENU1_TITLE*/
 
@@ -234,7 +238,7 @@ main {
 .menu1_underlineborder_anim {
   display: inline;
   text-decoration: none;
-  background:linear-gradient(to top, #f16062 4px, transparent 5px) no-repeat; 
+  background:linear-gradient(to top, #f16062 1px, transparent 5px) no-repeat; 
   background-size: 0 100%;
   transition: background-size .3s;
 }
@@ -249,22 +253,23 @@ main {
 .menu1_barredeco_left {
   display: inline-block;
   height: 12px;
-  width: 250px;
+  width: 340px;
   margin:auto auto auto 0px;
  }
 
 .menu1_barredeco_right {
   display: inline-block;
   height: 12px;
-  width: 250px;
+  width: 340px;
   margin: auto 0px auto auto;
 }
 
 .plat {
   display: flex;
   justify-content: space-between;
-  width: 76%;
+  width: 75%;
   margin: auto;
+  padding-bottom:20px;
 
 }
 
@@ -290,6 +295,7 @@ main {
   font-family: 'Courgette', cursive;
   font-size: 2em;
   font-style:bold;
+  padding-top:30px;
 }
 
 
@@ -305,6 +311,8 @@ main {
 
   .carte_outtitle h2 {
     font-size: 1.8em;
+    padding-bottom:30px;
+    padding-top:40px;
   }
 
 
@@ -331,6 +339,9 @@ main {
   font-size:1.1em;
 }
 
+.plat .prix{
+  padding-top:20px;
+}
 .basdepagecarte {
   flex-direction:row;
   height:150px;
@@ -346,7 +357,7 @@ main {
 }
 
 .basdepagecarte i{
-  padding:20px 0px 0px 10px;
+  padding:25px 0px 0px 10px;
 }
 
 .basdepagecarte h3 {
