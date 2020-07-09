@@ -398,7 +398,6 @@ aside .effetannonce {
   display: inline-block;
   animation: dots 3s infinite ease-in-out;
   font-size: 2em;
-  transition-delay: ;
 }
 
 .effetannonce .point2 {
