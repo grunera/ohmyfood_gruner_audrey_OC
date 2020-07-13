@@ -380,13 +380,18 @@ main {
 @media only screen and (max-width: 350px)
  {
 
- footer #contact {
+.sousmenu3_title h2{
+  font-size:1.05em;
+}
+
+footer #contact {
   padding: 20px 20px 0px 20px;
 }
 
 footer #mentionsleg {
   padding: 20px 20px 0px 20px;
 }
+
 
 }
 
