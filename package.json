@@ -1,19 +1,12 @@
 {
-  "name": "writing-sass",
+  "name": "joeblow",
   "version": "1.0.0",
-  "description": "Joe Blow's portfolio",
+  "description": "Joe Blow's web portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prefix": "postcss ./css/style.css --use autoprefixer -d./public/css/prefixed/"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gerkx/maintainable-css-with-sass.git"
-  },
-  "author": "gerkx",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gerkx/maintainable-css-with-sass/issues"
-  },
-  "homepage": "https://github.com/gerkx/maintainable-css-with-sass#readme"
-}
+  "browserslist": "last 4 versions" 
+  }
