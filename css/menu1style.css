@@ -151,17 +151,31 @@ a {
 
 /* FOOTER ANIMATION */
 
-@keyframes headshake {
+@-webkit-keyframes headshake {
   25% {
-    transform: translateX(5%);
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
   }
   75% {
-    transform: translateX(-5%);
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+  }
+}
+
+@keyframes headshake {
+  25% {
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+  }
+  75% {
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
   }
 }
 
 .headshakeanim:hover {
-  animation: headshake 150ms infinite ease-in-out;
+  -webkit-animation: headshake 150ms infinite ease-in-out;
+          animation: headshake 150ms infinite ease-in-out;
 }
 
 /*SECTION and MAIN*/
@@ -212,6 +226,8 @@ main {
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f16062), color-stop(#f37a6e), to(#f7a589));
+  background-image: -o-linear-gradient(left, #f16062, #f37a6e, #f7a589);
   background-image: linear-gradient(90deg, #f16062, #f37a6e, #f7a589);
   font-size: 2.5em;
   padding: 25px;
@@ -238,8 +254,11 @@ main {
 .menu1_underlineborder_anim {
   display: inline;
   text-decoration: none;
+  background:-o-linear-gradient(bottom, #f16062 1px, transparent 5px) no-repeat;
   background:linear-gradient(to top, #f16062 1px, transparent 5px) no-repeat; 
   background-size: 0 100%;
+  -webkit-transition: background-size .3s;
+  -o-transition: background-size .3s;
   transition: background-size .3s;
 }
 
