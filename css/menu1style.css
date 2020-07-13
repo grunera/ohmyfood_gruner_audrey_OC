@@ -132,7 +132,7 @@ footer #mentionsleg {
   padding: 20px 35px 0px 35px;
 }
 
-footer h2 {
+footer p {
   font-family:  'Montserrat', sans-serif;
   font-weight: normal;
   font-size: 1.2em;
@@ -374,20 +374,34 @@ main {
 
 }
 
+
+@media only screen and (max-width: 350px)
+ {
+
+ footer #contact {
+  padding: 20px 20px 0px 20px;
+}
+
+footer #mentionsleg {
+  padding: 20px 20px 0px 20px;
+}
+
+}
+
 /* REGLES RESPONSIVE ECRANS DE PLUS DE 730 px et moins de 1023px (I PAD PRO non inclus) */
 
 
 @media only screen and (max-width: 1023px) and (min-width: 731px) {
   
   
-  .menu1_barredeco_left {
+.menu1_barredeco_left {
   height: 5px;
-  width:120px;
+  width:100px;
   }
 
 .menu1_barredeco_right {
   height: 5px;
-  width: 120px;
+  width: 100px;
  }
  
 .plat {

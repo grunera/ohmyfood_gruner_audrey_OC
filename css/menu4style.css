@@ -132,7 +132,7 @@ footer #mentionsleg {
   padding:15px 35px 0px 35px;
 }
 
-footer h2 {
+footer p {
   font-family:  'Montserrat', sans-serif;
   font-weight: normal;
   font-size: 1.2em;
@@ -151,18 +151,33 @@ a {
 
 /* FOOTER ANIMATION */
 
-@keyframes headshake {
+@-webkit-keyframes headshake {
   25% {
-    transform: translateX(5%);
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
   }
   75% {
-    transform: translateX(-5%);
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+  }
+}
+
+@keyframes headshake {
+  25% {
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+  }
+  75% {
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
   }
 }
 
 .headshakeanim:hover {
-  animation: headshake 150ms infinite ease-in-out;
+  -webkit-animation: headshake 150ms infinite ease-in-out;
+          animation: headshake 150ms infinite ease-in-out;
 }
+
 
 /*SECTION and MAIN*/
 
@@ -204,16 +219,17 @@ main {
 
 .page_carte4 .degrademenu4 {
   display: inline-block;
-  background-clip: text;
+  background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#41963c), color-stop(#91ff66), to(#bfff7e));
+  background-image: -o-linear-gradient(left, #41963c, #91ff66, #bfff7e);
   background-image: linear-gradient(90deg, #41963c, #91ff66, #bfff7e);
   font-family: 'Kaushan Script', cursive;
   font-size: 2.8em;
   padding-top:70px;
   padding-bottom:60px;
 }
-
 
 .sousmenu4_title {
   display: flex;
@@ -265,8 +281,11 @@ main {
 .menu4_underlineborder_anim {
   display: inline;
   text-decoration: none;
+  background:-o-linear-gradient(bottom,  #91ff66 1px, transparent 5px) no-repeat;
   background:linear-gradient(to top,  #91ff66 1px, transparent 5px) no-repeat; 
   background-size: 0 100%;
+  -webkit-transition: background-size .2s;
+  -o-transition: background-size .2s;
   transition: background-size .2s;
 }
 
@@ -299,7 +318,7 @@ main {
 }
 
 .sousmenu4_title h2{
-  font-size:1.4em;
+  font-size:1.28em;
 }
 
 
@@ -320,8 +339,7 @@ main {
 .menu4_barredeco_right {
   height: 4px;
   width: 50px;
-  
-}
+ }
 
   footer {
     height: 80px;
@@ -330,6 +348,29 @@ main {
 
 }
 
+@media only screen and (max-width: 350px)
+ {
+
+
+.sousmenu4_title h2{
+  font-size:1.0em;
+}
+
+.plat {
+  font-size:0.9em;
+}
+
+
+
+ footer #contact {
+  padding: 20px 20px 0px 20px;
+}
+
+footer #mentionsleg {
+  padding: 20px 20px 0px 20px;
+}
+
+}
 
 /* REGLES RESPONSIVE ECRANS DE PLUS DE 730 px et moins de 1023px (I PAD PRO non inclus) */
 
@@ -341,17 +382,13 @@ main {
   }
 
 .menu4_barredeco_left {
-  
   height: 5px;
   width:120px;
-  
- }
+  }
 
 .menu4_barredeco_right {
-  
   height: 5px;
   width: 120px;
-  
 }
  
  .sousmenu4_title{
@@ -370,6 +407,5 @@ main {
   padding-left:40px;
   font-size:1.1em; 
 }
-
 
 }

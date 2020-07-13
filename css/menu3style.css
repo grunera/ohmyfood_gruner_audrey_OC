@@ -132,7 +132,7 @@ footer #mentionsleg {
   padding:15px 35px 0px 35px;
 }
 
-footer h2 {
+footer p {
   font-family:  'Montserrat', sans-serif;
   font-weight: normal;
   font-size: 1.2em;
@@ -151,17 +151,31 @@ a {
 
 /* FOOTER ANIMATION */
 
-@keyframes headshake {
+@-webkit-keyframes headshake {
   25% {
-    transform: translateX(5%);
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
   }
   75% {
-    transform: translateX(-5%);
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+  }
+}
+
+@keyframes headshake {
+  25% {
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+  }
+  75% {
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
   }
 }
 
 .headshakeanim:hover {
-  animation: headshake 150ms infinite ease-in-out;
+  -webkit-animation: headshake 150ms infinite ease-in-out;
+          animation: headshake 150ms infinite ease-in-out;
 }
 
 /*SECTION and MAIN*/
@@ -204,9 +218,11 @@ main {
 
 .page_carte3 .degrademenu3 {
   display: inline-block;
-  background-clip: text;
+  background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0228dd), color-stop(#0670f3), to(#229df9));
+  background-image: -o-linear-gradient(left, #0228dd, #0670f3, #229df9);
   background-image: linear-gradient(90deg, #0228dd, #0670f3, #229df9);
   font-family: 'Dancing Script', cursive;
   font-size: 3.0em;
@@ -255,7 +271,7 @@ main {
 
 .page_carte3 .prix {
   font-size:1.3em;
-  }
+}
 
 /*ANIMATION SOUSMENU3_TITLE*/
 
@@ -266,8 +282,11 @@ main {
 .menu3_underlineborder1_anim {
   display: inline;
   text-decoration: none;
+  background:-o-linear-gradient(bottom,  #0228dd 1px, transparent 5px) no-repeat;
   background:linear-gradient(to top,  #0228dd 1px, transparent 5px) no-repeat; 
   background-size: 0 100%;
+  -webkit-transition: background-size .2s;
+  -o-transition: background-size .2s;
   transition: background-size .2s;
 }
 
@@ -278,8 +297,11 @@ main {
 .menu3_underlineborder2_anim {
   display: inline;
   text-decoration: none;
+  background:-o-linear-gradient(bottom,  #0670f3 1px, transparent 5px) no-repeat;
   background:linear-gradient(to top,  #0670f3 1px, transparent 5px) no-repeat; 
   background-size: 0 100%;
+  -webkit-transition: background-size .2s;
+  -o-transition: background-size .2s;
   transition: background-size .2s;
 }
 
@@ -290,8 +312,11 @@ main {
 .menu3_underlineborder3_anim {
   display: inline;
   text-decoration: none;
+  background:-o-linear-gradient(bottom,  #229df9 1px, transparent 5px) no-repeat;
   background:linear-gradient(to top,  #229df9 1px, transparent 5px) no-repeat; 
   background-size: 0 100%;
+  -webkit-transition: background-size .2s;
+  -o-transition: background-size .2s;
   transition: background-size .2s;
 }
 
@@ -352,6 +377,18 @@ main {
 
 }
 
+@media only screen and (max-width: 350px)
+ {
+
+ footer #contact {
+  padding: 20px 20px 0px 20px;
+}
+
+footer #mentionsleg {
+  padding: 20px 20px 0px 20px;
+}
+
+}
 
 /* REGLES RESPONSIVE ECRANS DE PLUS DE 730 px et moins de 1023px (I PAD PRO non inclus) */
 

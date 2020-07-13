@@ -132,7 +132,7 @@ footer #mentionsleg {
   padding:15px 35px 0px 35px;
 }
 
-footer h2 {
+footer p {
   font-family:  'Montserrat', sans-serif;
   font-weight: normal;
   font-size: 1.2em;
@@ -151,17 +151,31 @@ a {
 
 /* FOOTER ANIMATION */
 
-@keyframes headshake {
+@-webkit-keyframes headshake {
   25% {
-    transform: translateX(5%);
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
   }
   75% {
-    transform: translateX(-5%);
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+  }
+}
+
+@keyframes headshake {
+  25% {
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+  }
+  75% {
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
   }
 }
 
 .headshakeanim:hover {
-  animation: headshake 150ms infinite ease-in-out;
+  -webkit-animation: headshake 150ms infinite ease-in-out;
+          animation: headshake 150ms infinite ease-in-out;
 }
 
 /*SECTION and MAIN*/
@@ -180,7 +194,7 @@ main {
 /*ELEMENTS SPECIFIQUES MENU 2 */
 
 .carte_outtitle h2 {
-  font-family: Times New Roman, sans-serif;
+  font-family: 'Times New Roman', sans-serif;
   font-size: 2.4em;
   text-align:center;
   padding-bottom:50px;
@@ -189,7 +203,7 @@ main {
 
 .page_carte2 .degrademenu2 {
   display: inline-block;
-  background-clip: text;
+  background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(90deg, #c67412, #a56799, #6e4ccc);
@@ -289,8 +303,11 @@ main {
 .menu2_underlineborder1_anim {
   display: inline;
   text-decoration: none;
+  background:-o-linear-gradient(bottom, #c67412 1px, transparent 5px) no-repeat;
   background:linear-gradient(to top, #c67412 1px, transparent 5px) no-repeat; 
   background-size: 0 100%;
+  -webkit-transition: background-size .3s;
+  -o-transition: background-size .3s;
   transition: background-size .3s;
 }
 
@@ -301,8 +318,11 @@ main {
 .menu2_underlineborder2_anim{
   display: inline;
   text-decoration: none;
+  background:-o-linear-gradient(bottom, #a56799 1px, transparent 5px) no-repeat;
   background:linear-gradient(to top, #a56799 1px, transparent 5px) no-repeat; 
   background-size: 0 100%;
+  -webkit-transition: background-size .3s;
+  -o-transition: background-size .3s;
   transition: background-size .3s;
 }
 
@@ -313,10 +333,14 @@ main {
 .menu2_underlineborder3_anim {
   display: inline;
   text-decoration: none;
+  background:-o-linear-gradient(bottom, #6e4ccc 1px, transparent 5px) no-repeat;
   background:linear-gradient(to top, #6e4ccc 1px, transparent 5px) no-repeat; 
   background-size: 0 100%;
+  -webkit-transition: background-size .3s;
+  -o-transition: background-size .3s;
   transition: background-size .3s;
 }
+
 /*FIN ANIMATION*/
 
 .plat {
@@ -450,13 +474,26 @@ main {
 
   }
 
+@media only screen and (max-width: 350px)
+ {
+
+ footer #contact {
+  padding: 20px 20px 0px 20px;
+}
+
+footer #mentionsleg {
+  padding: 20px 20px 0px 20px;
+}
+
+}
+
 
 /* REGLES RESPONSIVE ECRANS DE PLUS DE 730 px et moins de 1023px (I PAD PRO non inclus) */
 
 
 @media only screen and (max-width: 1023px) and (min-width: 731px) {
   
-  .carte p{
+  .carte p {
     font-size:0.88em;
   }
   

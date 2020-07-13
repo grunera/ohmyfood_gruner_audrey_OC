@@ -132,7 +132,7 @@ footer #mentionsleg {
   padding: 20px 35px 0px 35px;
 }
 
-footer h2 {
+footer p {
   font-family:  'Montserrat', sans-serif;
   font-weight: normal;
   font-size: 1.2em;
@@ -151,18 +151,33 @@ a {
 
 /* FOOTER ANIMATION */
 
-@keyframes headshake {
+@-webkit-keyframes headshake {
   25% {
-    transform: translateX(5%);
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
   }
   75% {
-    transform: translateX(-5%);
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+  }
+}
+
+@keyframes headshake {
+  25% {
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+  }
+  75% {
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
   }
 }
 
 .headshakeanim:hover {
-  animation: headshake 150ms infinite ease-in-out;
+  -webkit-animation: headshake 150ms infinite ease-in-out;
+          animation: headshake 150ms infinite ease-in-out;
 }
+
 
 
 /* MAIN */
@@ -185,17 +200,24 @@ main {
 /* ANIMATIONS ZOOM MENUS PAGE D ACCUEIL */
 
 .effetzoom {
-  transform: scale(0.75);
+  -webkit-transform: scale(0.75);
+      -ms-transform: scale(0.75);
+          transform: scale(0.75);
   opacity: 1;
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  -o-transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
   overflow:hidden;
 }
 
 .effetzoom:hover {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
   opacity: 0.3;
 }
-
 /* SECTIONS */
 
 section {
@@ -220,6 +242,8 @@ section {
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f16062), color-stop(#f37a6e), to(#f7a589));
+  background-image: -o-linear-gradient(left, #f16062, #f37a6e, #f7a589);
   background-image: linear-gradient(90deg, #f16062, #f37a6e, #f7a589);
   font-size: 2.5em;
   padding: 25px;
@@ -266,9 +290,11 @@ section {
 
 .menu2 .degrademenu2 {
   display: inline-block;
-  background-clip: text;
+  background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#c67412), color-stop(#a56799), to(#6e4ccc));
+  background-image: -o-linear-gradient(left, #c67412, #a56799, #6e4ccc);
   background-image: linear-gradient(90deg, #c67412, #a56799, #6e4ccc);
   font-family: 'Yeseva One', cursive;
   font-size: 1.7em;
@@ -299,9 +325,11 @@ section {
 
 .menu3 .degrademenu3 {
   display: inline-block;
-  background-clip: text;
+  background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0228dd), color-stop(#0670f3), to(#229df9));
+  background-image: -o-linear-gradient(left, #0228dd, #0670f3, #229df9);
   background-image: linear-gradient(90deg, #0228dd, #0670f3, #229df9);
   font-family: 'Dancing Script', cursive;
   font-size: 2.5em;
@@ -334,9 +362,11 @@ section {
 
 .menu4 .degrademenu4 {
   display: inline-block;
-  background-clip: text;
+  background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#41963c), color-stop(#91ff66), to(#bfff7e));
+  background-image: -o-linear-gradient(left, #41963c, #91ff66, #bfff7e);
   background-image: linear-gradient(90deg, #41963c, #91ff66, #bfff7e);
   font-family: 'Kaushan Script', cursive;
   font-size: 2.25em;
@@ -382,6 +412,18 @@ aside .effetannonce {
 
 /*ASIDE --Animation des 3 points */
 
+@-webkit-keyframes dots {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @keyframes dots {
   0% {
     opacity: 0;
@@ -396,16 +438,19 @@ aside .effetannonce {
 
 .effetannonce span {
   display: inline-block;
-  animation: dots 3s infinite ease-in-out;
+  -webkit-animation: dots 3s infinite ease-in-out;
+          animation: dots 3s infinite ease-in-out;
   font-size: 2em;
 }
 
 .effetannonce .point2 {
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .effetannonce .point3 {
-  animation-delay: 0.9s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 
 /* FORMATS RESPONSIVE -- */
@@ -444,6 +489,9 @@ aside .effetannonce {
     padding-bottom: 12px;
   }
 }
+
+
+
 
 /* REGLES RESPONSIVE ECRANS DE PLUS DE 730 px et moins de 1023px (I PAD PRO non inclus) */
 
