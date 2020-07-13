@@ -227,6 +227,7 @@ main {
   background-image: linear-gradient(90deg, #41963c, #91ff66, #bfff7e);
   font-family: 'Kaushan Script', cursive;
   font-size: 2.8em;
+  width:100%;
   padding-top:70px;
   padding-bottom:60px;
 }
@@ -378,7 +379,7 @@ footer #mentionsleg {
 @media only screen and (max-width: 1023px) and (min-width: 731px) {
 
   .page_carte4{
-    height:820px;
+    height:905px;
   }
 
 .menu4_barredeco_left {
@@ -396,7 +397,7 @@ footer #mentionsleg {
  }
 
 .plat {
-  font-size:1em;
+  font-size:0.9em;
   width: 78%;
   text-align:left;
   padding-bottom:12px;
